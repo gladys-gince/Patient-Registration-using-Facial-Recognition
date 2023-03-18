@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-md-3">
             <img src="{% static 'img/fcicon.png'%}" alt="" width="50%">
-            <h6 class="text-muted p-1"> FR-CV2-Django</h6>
+            <i><strong><h5 class="text p-1">Bitium Healthcare</h5></strong></i>
 
         </div>
         <div class="col-md-6">
@@ -15,9 +15,8 @@
             </div>
         </div>
         <div class="col-md-3">
-            <a target="_blank" class="scan" href="{% url 'details' %}"><input type="submit" class="profile-edit-btn m-2"
-                    name="btnAddMore" value="Run Scanner" /></a>
-            <a   href="{% url 'profiles' %}"><input type="submit" class="profile-edit-btn m-2 "
+            <a target="_blank" class="scan" href="{% url 'details' %}"><input type="submit" class="btn btn-primary m-2" name="btnAddMore" value="Run Scanner" /></a>
+            <a   href="{% url 'profiles' %}"><input type="submit" class="btn btn-primary m-2"
                         name="btnAddMore" value="Profiles" /></a>
         </div>
     </div>
@@ -25,15 +24,15 @@
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <a class="nav-link active" id="present-tab" data-toggle="tab" href="#present" role="tab"
-                aria-controls="home" aria-selected="true">Present</a>
+                aria-controls="home" aria-selected="true">Patients</a>
         </li>
         <li class="nav-item" role="presentation">
             <a class="nav-link" id="absent-tab" data-toggle="tab" href="#absent" role="tab" aria-controls="profile"
-                aria-selected="false">Employee Details</a>
+                aria-selected="false">Patient Details</a>
         </li>
         <li class="nav-item" role="presentation">
             <a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="contact"
-                aria-selected="false">Attendance</a>
+                aria-selected="false">Appointments</a>
         </li>
     </ul>
 
@@ -62,7 +61,7 @@
                 </tbody>
             </table>
             <a href="{% url 'reset' %}"><button type="button" class="btn btn-outline-secondary">Reset</button></a>
-            <a href="{% url 'index' %}"><button type="button" class="btn btn-outline-primary">Refresh</button></a>
+            <a href="{% url 'index' %}"><button type="button" class="btn btn-primary">Refresh</button></a>
 
         </div>
 
@@ -73,7 +72,7 @@
                         <th scope="col"> </th>
                         <th scope="col">Name</th>
                         <th scope="col">Status</th>
-                        <th scope="col">Shift Time</th>
+                        <th scope="col">Appointment Time</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -96,7 +95,7 @@
                     <tr>
                         <th scope="col"> </th>
                         <th scope="col">Profile ID</th>
-                        <th scope="col">Date</th>
+                        <th scope="col">Token</th>
                     </tr>
                 </thead>
                 <tbody>

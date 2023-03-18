@@ -6,7 +6,7 @@ from django.db import models
 
 
 
-types = [('employee','employee'),('visitor','visitor')]
+types = [('Staff','Staff'),('Visitor','Visitor')]
 class Profile(models.Model):
     first_name = models.CharField(max_length=70)
     last_name = models.CharField(max_length=70)
@@ -15,7 +15,7 @@ class Profile(models.Model):
     email = models.EmailField()
     ranking = models.IntegerField()
     profession = models.CharField(max_length=200)
-    status = models.CharField(choices=types,max_length=20,null=True,blank=False,default='employee')
+    status = models.CharField(choices=types,max_length=20,null=True,blank=False,default='Visitor')
     present = models.BooleanField(default=False)
     image = models.ImageField()
     updated = models.DateTimeField(auto_now=True)
