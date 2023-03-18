@@ -22,6 +22,15 @@ class Profile(models.Model):
     bg=models.CharField(max_length=10)
     ephone=models.BigIntegerField()
     address=models.CharField(max_length=100)
+    aadhar=models.BigIntegerField()
+    languages=models.CharField(max_length=100)
+    physician=models.CharField(max_length=100)
+    allergies=models.CharField(max_length=100)
+    height=models.CharField(max_length=50)
+    weight=models.CharField(max_length=50)
+    condition=models.CharField(max_length=100)
+    drugs=models.CharField(max_length=100)
+
 
 
     def __str__(self):

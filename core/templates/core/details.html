@@ -58,7 +58,7 @@
                     <h6>
                         {{profile.profession }}
                     </h6>
-                    <p class="proile-rating">Gender: <span>{{profile.ranking}}</span></p>
+                    <p class="proile-rating"><span>{{profile.ranking}}</span>, <span>{{profile.age}}</span></p>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -75,23 +75,14 @@
             <div class="col-md-4">
                 <div class="profile-work">
                     <br>
-                    <h6>Patient Data</h6>{% comment %} 
-                    <a href="">Website Link</a><br />
-                    <a href="">Bootsnipp Profile</a><br />
-                    <a href="">Bootply Profile</a>
-                    <p>SKILLS</p>
-                    <a href="">Web Designer</a><br />
-                    <a href="">Web Developer</a><br />
-                    <a href="">WordPress</a><br />
-                    <a href="">WooCommerce</a><br />
-                    <a href="">PHP, .Net</a><br /> {% endcomment %}
-                    <p>Languages known: </p><br>
-                    <p>Physician assigned: </p><br>
-                    <p>Allergies: </p><br>
-                    <p>Height: </p><br>
-                    <p>Weight: </p><br>
-                    <p>Condition: </p><br>
-                    <p>Drugs: </p><br>
+                    <h6>Patient Data</h6>
+                    <p>Languages known: <br>{{profile.languages}}</p><br>
+                    <p>Physician assigned: <br>{{profile.physician}}</p><br>
+                    <p>Allergies: <br>{{profile.allergies}}</p><br>
+                    <p>Height: <br>{{profile.height}}</p><br>
+                    <p>Weight: <br>{{profile.weight}}</p><br>
+                    <p>Condition: <br>{{profile.condition}}</p><br>
+                    <p>Drugs: <br>{{profile.drugs}}</p><br>
 
                 </div>
             </div>
@@ -136,6 +127,14 @@
                             </div>
                             <div class="col-md-6">
                                 <p>{{ profile.profession }}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Aadhar</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>{{ profile.aadhar }}</p>
                             </div>
                         </div>
                     </div>

@@ -7,7 +7,7 @@
         {% csrf_token %}
         <div class="row">
             <div class="col-md-4">
-                <h5 class="text-muted">Personal Informations:</h5><br>
+                <h5 class="text-muted">Personal Information:</h5><br>
 
                 <div class="d-flex justify-content-between">
                     <div class="m-1 mr-2">
@@ -33,6 +33,10 @@
                     <label class="text-muted"><small>Birth date:</small></label>
                     {{ form.date }}
                 </div>
+                <div class="m-1">
+                    <label class="text-muted"><small>Gender:</small></label>
+                    {{ form.ranking }}
+                </div>
                 <div class="d-flex justify-content-between">
                     <div class="m-1 mr-2">
                         <label class="text-muted"><small>Age:</small></label>
@@ -55,7 +59,7 @@
 
 
             <div class="col-md-4">
-                <h5 class="text-muted">Profession Informations:</h5><br>
+                <h5 class="text-muted">Professional Information:</h5><br>
                 <div class="m-1">
                     <label class="text-muted"><small>Profession:</small></label>
                     {{ form.profession }}
@@ -69,10 +73,38 @@
                     {{ form.shift }}
                 </div>
                 <div class="m-1">
-                    <label class="text-muted"><small>Gender:</small></label>
-                    {{ form.ranking }}
+                    <label class="text-muted"><small>Aadhar:</small></label>
+                    {{ form.aadhar }}
                 </div>
-
+                <br><h5 class="text-muted">Health Information:</h5><br>
+                <div class="m-1">
+                    <label class="text-muted"><small>Languages:</small></label>
+                    {{ form.languages }}
+                </div>
+                <div class="m-1">
+                    <label class="text-muted"><small>Physician:</small></label>
+                    {{ form.physician }}
+                </div>
+                <div class="m-1">
+                    <label class="text-muted"><small>Allergies:</small></label>
+                    {{ form.allergies }}
+                </div>
+                <div class="m-1">
+                    <label class="text-muted"><small>Height:</small></label>
+                    {{ form.height }}
+                </div>
+                <div class="m-1">
+                    <label class="text-muted"><small>Weight:</small></label>
+                    {{ form.weight }}
+                </div>
+                <div class="m-1">
+                    <label class="text-muted"><small>Medical condition:</small></label>
+                    {{ form.condition }}
+                </div>
+                <div class="m-1">
+                    <label class="text-muted"><small>Medicinal drugs assigned:</small></label>
+                    {{ form.drugs }}
+                </div>
             </div>
 
             <div class="col-md-4">
