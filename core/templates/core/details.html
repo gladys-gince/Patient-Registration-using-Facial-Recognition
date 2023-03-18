@@ -68,7 +68,8 @@
                 </div>
             </div>
             <div class="col-md-2">
-                <a href="{% url 'edit_profile' profile.id %}"><input type="button" class="btn btn-primary" name="btnAddMore" value="Edit Profile" /></a>
+                <a href="{% url 'edit_profile' profile.id %}"><input type="button" class="btn btn-primary" name="btnAddMore" value="Edit Profile" /></a><br><br>
+                <input type="button" class="btn btn-primary" name="btnAddMore" value="Print" onClick="window.print()"/>
             </div>
         </div>
         <div class="row">
