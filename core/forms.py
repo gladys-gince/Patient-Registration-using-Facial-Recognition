@@ -42,6 +42,9 @@ class ProfileForm(forms.ModelForm):
         self.fields['weight'].widget.attrs['class'] = 'form-control'
         self.fields['condition'].widget.attrs['class'] = 'form-control'
         self.fields['drugs'].widget.attrs['class'] = 'form-control'
+        self.fields['marital_status'].widget.attrs['class'] = 'form-control'
+
+        self.fields['doctor'].widget.attrs['class'] = 'form-control'
 
 
 

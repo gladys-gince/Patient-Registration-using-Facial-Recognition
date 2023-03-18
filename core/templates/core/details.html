@@ -59,6 +59,7 @@
                         {{profile.profession }}
                     </h6>
                     <p class="proile-rating"><span>{{profile.ranking}}</span>, <span>{{profile.age}}</span></p>
+                    <p class="proile-rating">Gender: <span>{{profile.ranking}}</span></p>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -84,6 +85,25 @@
                     <p>Weight: <br>{{profile.weight}}</p><br>
                     <p>Condition: <br>{{profile.condition}}</p><br>
                     <p>Drugs: <br>{{profile.drugs}}</p><br>
+
+                    <br>
+                    <h6>Patient Data</h6>{% comment %} 
+                    <a href="">Website Link</a><br />
+                    <a href="">Bootsnipp Profile</a><br />
+                    <a href="">Bootply Profile</a>
+                    <p>SKILLS</p>
+                    <a href="">Web Designer</a><br />
+                    <a href="">Web Developer</a><br />
+                    <a href="">WordPress</a><br />
+                    <a href="">WooCommerce</a><br />
+                    <a href="">PHP, .Net</a><br /> {% endcomment %}
+                    <p>Languages known: </p><br>
+                    <p>Physician assigned: </p><br>
+                    <p>Allergies: </p><br>
+                    <p>Height: </p><br>
+                    <p>Weight: </p><br>
+                    <p>Condition: </p><br>
+                    <p>Drugs: </p><br>
 
                 </div>
             </div>
@@ -138,10 +158,80 @@
                                 <p>{{ profile.aadhar }}</p>
                             </div>
                         </div>
+                    </div><hr>
+                    </div><br><br>
+                    
+               <u> <strong><h3>Prescription</h3><br></strong></u>
+                    <div class="row justify-content-between">
+                        <div class="col-4">
+                            <div class="tab-content profile-tab" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Doctor's Qualification: </label>
+                                        </div>
+                                    </div><br>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6"> 
+                                            <label>History of :</label>
+                                        </div>
+                                    </div><br><br><br><br><br><br>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Current History:</label>
+                                        </div>
+                                    </div><br><br><br><br><br><br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Medication:</label>
+                                        </div>
+                                    </div><br><br><br><br><br><br>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Treatment Adviced:</label>
+                                        </div>
+                                    </div><br><br><br><br><br><br>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>______________________</label>
+                                        <label>Signature</label>
+                                    </div>
+                                   
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>(Doctor's Name)</label>
+                                        <label>Dr.______________________________________________________</label>
+                                    </div>
+                                </div><br><br><br>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label>Registration Number(Dr.'s'):</label>
+                                    </div>
+                                    
+                                </div><br><br><br><br><br><br><br><br><br>
+                                <div class="row" >
+                                    <div class="col-auto mr-auto">
+                                        <label>Dr. 's Stamp</label>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
+                
             </div>
+            
         </div>
+        
 </div>
 {% endif %}
 
