@@ -4,6 +4,8 @@ from time import time
 from django.db import models
 
 types = [('Staff','Staff'),('Visitor','Visitor')]
+doctors = [(),(),(),(),(),()]
+
 class Profile(models.Model):
     first_name = models.CharField(max_length=70)
     last_name = models.CharField(max_length=70)
