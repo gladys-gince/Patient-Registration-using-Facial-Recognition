@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-md-3">
             <img src="{% static 'img/fcicon.png'%}" alt="" width="50%">
-            <h6 class="text-muted p-1"> FR-CV2-Django</h6>
+    <i><strong><h5 class="text p-1">Bitium Healthcare</h5></strong></i>
 
         </div>
         <div class="col-md-6">
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="col-md-3">
-            <a href="{% url 'add_profile' %}"><input type="submit" class="profile-edit-btn m-2 " name="btnAddMore"
+            <a href="{% url 'add_profile' %}"><input type="submit" class="btn btn-primary m-2 " name="btnAddMore"
                     value="Add Profile" /></a>
             <a   href="{% url 'index' %}"><input type="submit" class="profile-edit-btn m-2 "
                         name="btnAddMore" value="Return" /></a>
@@ -29,9 +29,9 @@
             <thead>
                 <tr>
                     <th scope="col">Full Name</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Profession</th>
                     <th scope="col">Phone</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Date of Birth</th>
                     <th scope="col"> </th>
 
                     <th scope="col"> </th>
@@ -43,9 +43,9 @@
                 {% for profile in profiles %}
                 <tr>
                     <td>{{profile.first_name}} {{profile.last_name}}</td>
-                    <td>{{profile.status}}</td>
-                    <td>{{profile.profession}}</td>
                     <td>0{{profile.phone}}</td>
+                    <td>{{profile.status}}</td>
+                    <td>{{profile.date}}</td>
                     <td></td>
 
                     <td>

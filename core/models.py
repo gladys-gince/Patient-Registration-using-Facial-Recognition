@@ -3,23 +3,27 @@ from time import time
 
 from django.db import models
 
-
-
-
-types = [('employee','employee'),('visitor','visitor')]
+types = [('Staff','Staff'),('Visitor','Visitor')]
 class Profile(models.Model):
     first_name = models.CharField(max_length=70)
     last_name = models.CharField(max_length=70)
     date = models.DateField()
     phone = models.BigIntegerField()
     email = models.EmailField()
-    ranking = models.IntegerField()
+    ranking = models.CharField(max_length=20)
     profession = models.CharField(max_length=200)
-    status = models.CharField(choices=types,max_length=20,null=True,blank=False,default='employee')
+    status = models.CharField(choices=types,max_length=20,null=True,blank=False,default='Visitor')
     present = models.BooleanField(default=False)
     image = models.ImageField()
     updated = models.DateTimeField(auto_now=True)
     shift = models.TimeField()
+    age=models.IntegerField()
+
+    bg=models.CharField(max_length=10)
+    ephone=models.BigIntegerField()
+    address=models.CharField(max_length=100)
+
+
     def __str__(self):
         return self.first_name +' '+self.last_name
 
@@ -29,4 +33,3 @@ class LastFace(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     def __str__(self):
         return self.last_face
-

@@ -27,3 +27,8 @@ class ProfileForm(forms.ModelForm):
         self.fields['status'].widget.attrs['class'] = 'form-control'
         #self.fields['image'].widget.attrs['class'] = 'form-control'
         self.fields['shift'].widget.attrs['class'] = 'form-control'
+
+        self.fields['age'].widget.attrs['class'] = 'form-control'
+        self.fields['bg'].widget.attrs['class'] = 'form-control'
+        self.fields['ephone'].widget.attrs['class'] = 'form-control'
+        self.fields['address'].widget.attrs['class'] = 'form-control'
